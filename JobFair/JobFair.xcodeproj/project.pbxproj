@@ -1,0 +1,609 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D754CCD025668D8D006460B4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D754CCCF25668D8D006460B4 /* AppDelegate.swift */; };
+		D754CCD225668D8D006460B4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D754CCD125668D8D006460B4 /* SceneDelegate.swift */; };
+		D754CCD425668D8D006460B4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D754CCD325668D8D006460B4 /* ViewController.swift */; };
+		D754CCD725668D8D006460B4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D754CCD525668D8D006460B4 /* Main.storyboard */; };
+		D754CCDA25668D8D006460B4 /* JobFair.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D754CCD825668D8D006460B4 /* JobFair.xcdatamodeld */; };
+		D754CCDC25668D8E006460B4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D754CCDB25668D8E006460B4 /* Assets.xcassets */; };
+		D754CCDF25668D8E006460B4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D754CCDD25668D8E006460B4 /* LaunchScreen.storyboard */; };
+		D754CCEA25668D8F006460B4 /* JobFairTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D754CCE925668D8F006460B4 /* JobFairTests.swift */; };
+		D754CCF525668D8F006460B4 /* JobFairUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D754CCF425668D8F006460B4 /* JobFairUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D754CCE625668D8E006460B4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D754CCC425668D8D006460B4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D754CCCB25668D8D006460B4;
+			remoteInfo = JobFair;
+		};
+		D754CCF125668D8F006460B4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D754CCC425668D8D006460B4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D754CCCB25668D8D006460B4;
+			remoteInfo = JobFair;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D754CCCC25668D8D006460B4 /* JobFair.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JobFair.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D754CCCF25668D8D006460B4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D754CCD125668D8D006460B4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		D754CCD325668D8D006460B4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D754CCD625668D8D006460B4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D754CCD925668D8D006460B4 /* JobFair.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = JobFair.xcdatamodel; sourceTree = "<group>"; };
+		D754CCDB25668D8E006460B4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D754CCDE25668D8E006460B4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D754CCE025668D8E006460B4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D754CCE525668D8E006460B4 /* JobFairTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JobFairTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D754CCE925668D8F006460B4 /* JobFairTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobFairTests.swift; sourceTree = "<group>"; };
+		D754CCEB25668D8F006460B4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D754CCF025668D8F006460B4 /* JobFairUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JobFairUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D754CCF425668D8F006460B4 /* JobFairUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobFairUITests.swift; sourceTree = "<group>"; };
+		D754CCF625668D8F006460B4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D754CCC925668D8D006460B4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D754CCE225668D8E006460B4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D754CCED25668D8F006460B4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D754CCC325668D8D006460B4 = {
+			isa = PBXGroup;
+			children = (
+				D754CCCE25668D8D006460B4 /* JobFair */,
+				D754CCE825668D8F006460B4 /* JobFairTests */,
+				D754CCF325668D8F006460B4 /* JobFairUITests */,
+				D754CCCD25668D8D006460B4 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D754CCCD25668D8D006460B4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D754CCCC25668D8D006460B4 /* JobFair.app */,
+				D754CCE525668D8E006460B4 /* JobFairTests.xctest */,
+				D754CCF025668D8F006460B4 /* JobFairUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D754CCCE25668D8D006460B4 /* JobFair */ = {
+			isa = PBXGroup;
+			children = (
+				D754CCCF25668D8D006460B4 /* AppDelegate.swift */,
+				D754CCD125668D8D006460B4 /* SceneDelegate.swift */,
+				D754CCD325668D8D006460B4 /* ViewController.swift */,
+				D754CCD525668D8D006460B4 /* Main.storyboard */,
+				D754CCDB25668D8E006460B4 /* Assets.xcassets */,
+				D754CCDD25668D8E006460B4 /* LaunchScreen.storyboard */,
+				D754CCE025668D8E006460B4 /* Info.plist */,
+				D754CCD825668D8D006460B4 /* JobFair.xcdatamodeld */,
+			);
+			path = JobFair;
+			sourceTree = "<group>";
+		};
+		D754CCE825668D8F006460B4 /* JobFairTests */ = {
+			isa = PBXGroup;
+			children = (
+				D754CCE925668D8F006460B4 /* JobFairTests.swift */,
+				D754CCEB25668D8F006460B4 /* Info.plist */,
+			);
+			path = JobFairTests;
+			sourceTree = "<group>";
+		};
+		D754CCF325668D8F006460B4 /* JobFairUITests */ = {
+			isa = PBXGroup;
+			children = (
+				D754CCF425668D8F006460B4 /* JobFairUITests.swift */,
+				D754CCF625668D8F006460B4 /* Info.plist */,
+			);
+			path = JobFairUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D754CCCB25668D8D006460B4 /* JobFair */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D754CCF925668D8F006460B4 /* Build configuration list for PBXNativeTarget "JobFair" */;
+			buildPhases = (
+				D754CCC825668D8D006460B4 /* Sources */,
+				D754CCC925668D8D006460B4 /* Frameworks */,
+				D754CCCA25668D8D006460B4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JobFair;
+			productName = JobFair;
+			productReference = D754CCCC25668D8D006460B4 /* JobFair.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D754CCE425668D8E006460B4 /* JobFairTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D754CCFC25668D8F006460B4 /* Build configuration list for PBXNativeTarget "JobFairTests" */;
+			buildPhases = (
+				D754CCE125668D8E006460B4 /* Sources */,
+				D754CCE225668D8E006460B4 /* Frameworks */,
+				D754CCE325668D8E006460B4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D754CCE725668D8E006460B4 /* PBXTargetDependency */,
+			);
+			name = JobFairTests;
+			productName = JobFairTests;
+			productReference = D754CCE525668D8E006460B4 /* JobFairTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D754CCEF25668D8F006460B4 /* JobFairUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D754CCFF25668D8F006460B4 /* Build configuration list for PBXNativeTarget "JobFairUITests" */;
+			buildPhases = (
+				D754CCEC25668D8F006460B4 /* Sources */,
+				D754CCED25668D8F006460B4 /* Frameworks */,
+				D754CCEE25668D8F006460B4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D754CCF225668D8F006460B4 /* PBXTargetDependency */,
+			);
+			name = JobFairUITests;
+			productName = JobFairUITests;
+			productReference = D754CCF025668D8F006460B4 /* JobFairUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D754CCC425668D8D006460B4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1230;
+				LastUpgradeCheck = 1230;
+				TargetAttributes = {
+					D754CCCB25668D8D006460B4 = {
+						CreatedOnToolsVersion = 12.3;
+					};
+					D754CCE425668D8E006460B4 = {
+						CreatedOnToolsVersion = 12.3;
+						TestTargetID = D754CCCB25668D8D006460B4;
+					};
+					D754CCEF25668D8F006460B4 = {
+						CreatedOnToolsVersion = 12.3;
+						TestTargetID = D754CCCB25668D8D006460B4;
+					};
+				};
+			};
+			buildConfigurationList = D754CCC725668D8D006460B4 /* Build configuration list for PBXProject "JobFair" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D754CCC325668D8D006460B4;
+			productRefGroup = D754CCCD25668D8D006460B4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D754CCCB25668D8D006460B4 /* JobFair */,
+				D754CCE425668D8E006460B4 /* JobFairTests */,
+				D754CCEF25668D8F006460B4 /* JobFairUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D754CCCA25668D8D006460B4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D754CCDF25668D8E006460B4 /* LaunchScreen.storyboard in Resources */,
+				D754CCDC25668D8E006460B4 /* Assets.xcassets in Resources */,
+				D754CCD725668D8D006460B4 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D754CCE325668D8E006460B4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D754CCEE25668D8F006460B4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D754CCC825668D8D006460B4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D754CCD425668D8D006460B4 /* ViewController.swift in Sources */,
+				D754CCDA25668D8D006460B4 /* JobFair.xcdatamodeld in Sources */,
+				D754CCD025668D8D006460B4 /* AppDelegate.swift in Sources */,
+				D754CCD225668D8D006460B4 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D754CCE125668D8E006460B4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D754CCEA25668D8F006460B4 /* JobFairTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D754CCEC25668D8F006460B4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D754CCF525668D8F006460B4 /* JobFairUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D754CCE725668D8E006460B4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D754CCCB25668D8D006460B4 /* JobFair */;
+			targetProxy = D754CCE625668D8E006460B4 /* PBXContainerItemProxy */;
+		};
+		D754CCF225668D8F006460B4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D754CCCB25668D8D006460B4 /* JobFair */;
+			targetProxy = D754CCF125668D8F006460B4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D754CCD525668D8D006460B4 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D754CCD625668D8D006460B4 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D754CCDD25668D8E006460B4 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D754CCDE25668D8E006460B4 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D754CCF725668D8F006460B4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D754CCF825668D8F006460B4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D754CCFA25668D8F006460B4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = JobFair/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = TaDa.JobFair;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D754CCFB25668D8F006460B4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = JobFair/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = TaDa.JobFair;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		D754CCFD25668D8F006460B4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = JobFairTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = TaDa.JobFairTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JobFair.app/JobFair";
+			};
+			name = Debug;
+		};
+		D754CCFE25668D8F006460B4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = JobFairTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = TaDa.JobFairTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JobFair.app/JobFair";
+			};
+			name = Release;
+		};
+		D754CD0025668D8F006460B4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = JobFairUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = TaDa.JobFairUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = JobFair;
+			};
+			name = Debug;
+		};
+		D754CD0125668D8F006460B4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = JobFairUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = TaDa.JobFairUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = JobFair;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D754CCC725668D8D006460B4 /* Build configuration list for PBXProject "JobFair" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D754CCF725668D8F006460B4 /* Debug */,
+				D754CCF825668D8F006460B4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D754CCF925668D8F006460B4 /* Build configuration list for PBXNativeTarget "JobFair" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D754CCFA25668D8F006460B4 /* Debug */,
+				D754CCFB25668D8F006460B4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D754CCFC25668D8F006460B4 /* Build configuration list for PBXNativeTarget "JobFairTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D754CCFD25668D8F006460B4 /* Debug */,
+				D754CCFE25668D8F006460B4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D754CCFF25668D8F006460B4 /* Build configuration list for PBXNativeTarget "JobFairUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D754CD0025668D8F006460B4 /* Debug */,
+				D754CD0125668D8F006460B4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		D754CCD825668D8D006460B4 /* JobFair.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				D754CCD925668D8D006460B4 /* JobFair.xcdatamodel */,
+			);
+			currentVersion = D754CCD925668D8D006460B4 /* JobFair.xcdatamodel */;
+			path = JobFair.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = D754CCC425668D8D006460B4 /* Project object */;
+}
