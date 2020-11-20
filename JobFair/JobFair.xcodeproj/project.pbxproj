@@ -3,15 +3,30 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A580D7BB25677235001D1B01 /* Storyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = A580D7BA25677235001D1B01 /* Storyboard.swift */; };
+		A580D7C12567727B001D1B01 /* UIViewController+.swift in Sources */ = {isa = PBXBuildFile; fileRef = A580D7C02567727B001D1B01 /* UIViewController+.swift */; };
+		A580D7CB256772F2001D1B01 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A580D7CA256772F2001D1B01 /* Login.storyboard */; };
+		A580D7D025677304001D1B01 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A580D7CF25677304001D1B01 /* LoginViewController.swift */; };
+		A580D828256798A5001D1B01 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = A580D827256798A5001D1B01 /* Service.swift */; };
+		A580D84725679B6E001D1B01 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = A580D84625679B6E001D1B01 /* Router.swift */; };
+		A580D84C25679EDA001D1B01 /* SessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A580D84B25679EDA001D1B01 /* SessionManager.swift */; };
+		A580D8522567A330001D1B01 /* AppSetting.swift in Sources */ = {isa = PBXBuildFile; fileRef = A580D8512567A330001D1B01 /* AppSetting.swift */; };
+		A580D85A2567A378001D1B01 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = A580D8592567A378001D1B01 /* User.swift */; };
+		A580D8912567A5E5001D1B01 /* SearchJob.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A580D8902567A5E5001D1B01 /* SearchJob.storyboard */; };
+		A580D8962567A5FA001D1B01 /* SearchJobViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A580D8952567A5FA001D1B01 /* SearchJobViewController.swift */; };
+		A580D89C2567A63D001D1B01 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A580D89B2567A63D001D1B01 /* BaseViewController.swift */; };
+		A580D8AA2567A94F001D1B01 /* SearchJobViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A580D8A92567A94F001D1B01 /* SearchJobViewModel.swift */; };
+		A580D8AF2567A976001D1B01 /* ViewModelType.swift in Sources */ = {isa = PBXBuildFile; fileRef = A580D8AE2567A976001D1B01 /* ViewModelType.swift */; };
+		A580D8B42567AAA1001D1B01 /* Observable+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = A580D8B32567AAA1001D1B01 /* Observable+Ext.swift */; };
+		A580D8BA2567ABA2001D1B01 /* Account.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A580D8B92567ABA2001D1B01 /* Account.storyboard */; };
+		A580D8BF2567ABB4001D1B01 /* AccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A580D8BE2567ABB4001D1B01 /* AccountViewController.swift */; };
 		C7B45403AB59A4244C910F62 /* Pods_JobFair_JobFairUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6EF2E7BC73A5AB58517B6E0 /* Pods_JobFair_JobFairUITests.framework */; };
 		CF9DD82F243A1F984A6FCFEB /* Pods_JobFairTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF2797C191CBB6E0717BF155 /* Pods_JobFairTests.framework */; };
 		D754CCD025668D8D006460B4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D754CCCF25668D8D006460B4 /* AppDelegate.swift */; };
-		D754CCD225668D8D006460B4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D754CCD125668D8D006460B4 /* SceneDelegate.swift */; };
-		D754CCD425668D8D006460B4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D754CCD325668D8D006460B4 /* ViewController.swift */; };
 		D754CCD725668D8D006460B4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D754CCD525668D8D006460B4 /* Main.storyboard */; };
 		D754CCDA25668D8D006460B4 /* JobFair.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D754CCD825668D8D006460B4 /* JobFair.xcdatamodeld */; };
 		D754CCDC25668D8E006460B4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D754CCDB25668D8E006460B4 /* Assets.xcassets */; };
@@ -44,12 +59,27 @@
 		4E7BD7805707471C5A690894 /* Pods-JobFair.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JobFair.debug.xcconfig"; path = "Target Support Files/Pods-JobFair/Pods-JobFair.debug.xcconfig"; sourceTree = "<group>"; };
 		55FF2930F5C8D7429E68F7DD /* Pods_JobFair.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JobFair.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		90AAF48907FA591399EF72C3 /* Pods-JobFairTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JobFairTests.debug.xcconfig"; path = "Target Support Files/Pods-JobFairTests/Pods-JobFairTests.debug.xcconfig"; sourceTree = "<group>"; };
+		A580D7BA25677235001D1B01 /* Storyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storyboard.swift; sourceTree = "<group>"; };
+		A580D7C02567727B001D1B01 /* UIViewController+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+.swift"; sourceTree = "<group>"; };
+		A580D7CA256772F2001D1B01 /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
+		A580D7CF25677304001D1B01 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		A580D827256798A5001D1B01 /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
+		A580D84625679B6E001D1B01 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		A580D84B25679EDA001D1B01 /* SessionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionManager.swift; sourceTree = "<group>"; };
+		A580D8512567A330001D1B01 /* AppSetting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSetting.swift; sourceTree = "<group>"; };
+		A580D8592567A378001D1B01 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		A580D8902567A5E5001D1B01 /* SearchJob.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SearchJob.storyboard; sourceTree = "<group>"; };
+		A580D8952567A5FA001D1B01 /* SearchJobViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchJobViewController.swift; sourceTree = "<group>"; };
+		A580D89B2567A63D001D1B01 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		A580D8A92567A94F001D1B01 /* SearchJobViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchJobViewModel.swift; sourceTree = "<group>"; };
+		A580D8AE2567A976001D1B01 /* ViewModelType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelType.swift; sourceTree = "<group>"; };
+		A580D8B32567AAA1001D1B01 /* Observable+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Observable+Ext.swift"; sourceTree = "<group>"; };
+		A580D8B92567ABA2001D1B01 /* Account.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Account.storyboard; sourceTree = "<group>"; };
+		A580D8BE2567ABB4001D1B01 /* AccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewController.swift; sourceTree = "<group>"; };
 		AF2797C191CBB6E0717BF155 /* Pods_JobFairTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JobFairTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6EF2E7BC73A5AB58517B6E0 /* Pods_JobFair_JobFairUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JobFair_JobFairUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D754CCCC25668D8D006460B4 /* JobFair.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JobFair.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D754CCCF25668D8D006460B4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		D754CCD125668D8D006460B4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		D754CCD325668D8D006460B4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		D754CCD625668D8D006460B4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D754CCD925668D8D006460B4 /* JobFair.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = JobFair.xcdatamodel; sourceTree = "<group>"; };
 		D754CCDB25668D8E006460B4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -103,6 +133,126 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		A580D7B925677222001D1B01 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				A580D7BA25677235001D1B01 /* Storyboard.swift */,
+				A580D8AE2567A976001D1B01 /* ViewModelType.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		A580D7BF2567726B001D1B01 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				A580D7C02567727B001D1B01 /* UIViewController+.swift */,
+				A580D8B32567AAA1001D1B01 /* Observable+Ext.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		A580D7C5256772B6001D1B01 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				D754CCE025668D8E006460B4 /* Info.plist */,
+				D754CCD825668D8D006460B4 /* JobFair.xcdatamodeld */,
+				D754CCCF25668D8D006460B4 /* AppDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		A580D7C9256772E8001D1B01 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				D754CCD525668D8D006460B4 /* Main.storyboard */,
+				D754CCDD25668D8E006460B4 /* LaunchScreen.storyboard */,
+				A580D7CA256772F2001D1B01 /* Login.storyboard */,
+				A580D7CF25677304001D1B01 /* LoginViewController.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		A580D7D42567733E001D1B01 /* Screen */ = {
+			isa = PBXGroup;
+			children = (
+				A580D8B82567AB95001D1B01 /* Account */,
+				A580D89A2567A630001D1B01 /* Base */,
+				A580D88F2567A5DC001D1B01 /* SearchJob */,
+				A580D7C9256772E8001D1B01 /* Login */,
+			);
+			path = Screen;
+			sourceTree = "<group>";
+		};
+		A580D7D625677394001D1B01 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				D754CCDB25668D8E006460B4 /* Assets.xcassets */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		A580D7D7256773EA001D1B01 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A580D8592567A378001D1B01 /* User.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A580D7D8256773F7001D1B01 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				A580D827256798A5001D1B01 /* Service.swift */,
+				A580D84625679B6E001D1B01 /* Router.swift */,
+				A580D84B25679EDA001D1B01 /* SessionManager.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		A580D82225677C33001D1B01 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				A580D8502567A2BF001D1B01 /* Local */,
+				A580D7D8256773F7001D1B01 /* API */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		A580D8502567A2BF001D1B01 /* Local */ = {
+			isa = PBXGroup;
+			children = (
+				A580D8512567A330001D1B01 /* AppSetting.swift */,
+			);
+			path = Local;
+			sourceTree = "<group>";
+		};
+		A580D88F2567A5DC001D1B01 /* SearchJob */ = {
+			isa = PBXGroup;
+			children = (
+				A580D8902567A5E5001D1B01 /* SearchJob.storyboard */,
+				A580D8952567A5FA001D1B01 /* SearchJobViewController.swift */,
+				A580D8A92567A94F001D1B01 /* SearchJobViewModel.swift */,
+			);
+			path = SearchJob;
+			sourceTree = "<group>";
+		};
+		A580D89A2567A630001D1B01 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				A580D89B2567A63D001D1B01 /* BaseViewController.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		A580D8B82567AB95001D1B01 /* Account */ = {
+			isa = PBXGroup;
+			children = (
+				A580D8B92567ABA2001D1B01 /* Account.storyboard */,
+				A580D8BE2567ABB4001D1B01 /* AccountViewController.swift */,
+			);
+			path = Account;
+			sourceTree = "<group>";
+		};
 		B9A03BDBE7D95F2C18D7C824 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -113,7 +263,6 @@
 				90AAF48907FA591399EF72C3 /* Pods-JobFairTests.debug.xcconfig */,
 				F1838FDDD98BB2C15173532A /* Pods-JobFairTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -142,14 +291,13 @@
 		D754CCCE25668D8D006460B4 /* JobFair */ = {
 			isa = PBXGroup;
 			children = (
-				D754CCCF25668D8D006460B4 /* AppDelegate.swift */,
-				D754CCD125668D8D006460B4 /* SceneDelegate.swift */,
-				D754CCD325668D8D006460B4 /* ViewController.swift */,
-				D754CCD525668D8D006460B4 /* Main.storyboard */,
-				D754CCDB25668D8E006460B4 /* Assets.xcassets */,
-				D754CCDD25668D8E006460B4 /* LaunchScreen.storyboard */,
-				D754CCE025668D8E006460B4 /* Info.plist */,
-				D754CCD825668D8D006460B4 /* JobFair.xcdatamodeld */,
+				A580D82225677C33001D1B01 /* Data */,
+				A580D7D7256773EA001D1B01 /* Model */,
+				A580D7D625677394001D1B01 /* Resource */,
+				A580D7D42567733E001D1B01 /* Screen */,
+				A580D7C5256772B6001D1B01 /* App */,
+				A580D7BF2567726B001D1B01 /* Extension */,
+				A580D7B925677222001D1B01 /* Utils */,
 			);
 			path = JobFair;
 			sourceTree = "<group>";
@@ -280,8 +428,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A580D7CB256772F2001D1B01 /* Login.storyboard in Resources */,
 				D754CCDF25668D8E006460B4 /* LaunchScreen.storyboard in Resources */,
 				D754CCDC25668D8E006460B4 /* Assets.xcassets in Resources */,
+				A580D8912567A5E5001D1B01 /* SearchJob.storyboard in Resources */,
+				A580D8BA2567ABA2001D1B01 /* Account.storyboard in Resources */,
 				D754CCD725668D8D006460B4 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -410,10 +561,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D754CCD425668D8D006460B4 /* ViewController.swift in Sources */,
+				A580D7BB25677235001D1B01 /* Storyboard.swift in Sources */,
+				A580D7C12567727B001D1B01 /* UIViewController+.swift in Sources */,
+				A580D8BF2567ABB4001D1B01 /* AccountViewController.swift in Sources */,
 				D754CCDA25668D8D006460B4 /* JobFair.xcdatamodeld in Sources */,
+				A580D84725679B6E001D1B01 /* Router.swift in Sources */,
+				A580D8B42567AAA1001D1B01 /* Observable+Ext.swift in Sources */,
+				A580D7D025677304001D1B01 /* LoginViewController.swift in Sources */,
+				A580D89C2567A63D001D1B01 /* BaseViewController.swift in Sources */,
+				A580D8AF2567A976001D1B01 /* ViewModelType.swift in Sources */,
+				A580D8522567A330001D1B01 /* AppSetting.swift in Sources */,
 				D754CCD025668D8D006460B4 /* AppDelegate.swift in Sources */,
-				D754CCD225668D8D006460B4 /* SceneDelegate.swift in Sources */,
+				A580D8962567A5FA001D1B01 /* SearchJobViewController.swift in Sources */,
+				A580D84C25679EDA001D1B01 /* SessionManager.swift in Sources */,
+				A580D85A2567A378001D1B01 /* User.swift in Sources */,
+				A580D8AA2567A94F001D1B01 /* SearchJobViewModel.swift in Sources */,
+				A580D828256798A5001D1B01 /* Service.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -591,7 +754,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = JobFair/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/JobFair/App/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -610,7 +774,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = JobFair/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/JobFair/App/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
