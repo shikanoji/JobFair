@@ -7,6 +7,8 @@
 
 import UIKit
 import CoreData
+import Firebase
+import GoogleSignIn
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -14,7 +16,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         setupAppearance()
-        
+        FirebaseApp.configure()
+        GIDSignIn.sharedInstance()?.clientID = FirebaseApp.app()?.options.clientID
+        application.statusBarStyle = .lightContent
         return true
     }
     
@@ -25,5 +29,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window?.rootViewController = navigationVC
         self.window?.makeKeyAndVisible()
         self.window?.frame = UIScreen.main.bounds
+    }
+    
+    func application(_ app: UIApplication, open url: URL, options: [UIApplication.OpenURLOptionsKey : Any] = [:]) -> Bool {
+        return ((GIDSignIn.sharedInstance()?.handle(url)) != nil)
     }
 }
