@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Search Job View Controller-->
+        <scene sceneID="igL-ka-wXh">
+            <objects>
+                <viewController storyboardIdentifier="SearchJobViewController" id="oZl-G3-FsK" customClass="SearchJobViewController" customModule="JobFair" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="h03-9u-nhf">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c2Y-M7-sg7">
+                                <rect key="frame" x="314" y="84" width="40" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="Ccy-za-vh8"/>
+                                </constraints>
+                                <state key="normal" image="announcement">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="large"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TdY-8I-huR">
+                                <rect key="frame" x="358" y="84" width="40" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="3gs-VH-ARy"/>
+                                    <constraint firstAttribute="width" secondItem="TdY-8I-huR" secondAttribute="height" multiplier="1:1" id="jPn-hi-3b2"/>
+                                </constraints>
+                                <state key="normal" image="person">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="csF-q7-oat">
+                                <rect key="frame" x="16" y="420.5" width="382" height="55"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Nhập từ khoá công việc bạn quan tâm" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zBe-ae-oQ0">
+                                        <rect key="frame" x="5" y="0.0" width="372" height="55"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="55" id="Plg-Ln-k6P"/>
+                                    <constraint firstItem="zBe-ae-oQ0" firstAttribute="leading" secondItem="csF-q7-oat" secondAttribute="leading" constant="5" id="QoN-K6-W18"/>
+                                    <constraint firstItem="zBe-ae-oQ0" firstAttribute="top" secondItem="csF-q7-oat" secondAttribute="top" id="UkH-9M-3By"/>
+                                    <constraint firstAttribute="bottom" secondItem="zBe-ae-oQ0" secondAttribute="bottom" id="YxY-W3-Tuf"/>
+                                    <constraint firstAttribute="trailing" secondItem="zBe-ae-oQ0" secondAttribute="trailing" constant="5" id="hxr-Fc-0Xl"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="joB-Ne-8S2">
+                                <rect key="frame" x="130" y="505.5" width="154" height="36"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="36" id="0dv-pg-Hft"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                <state key="normal" title="Tìm kiếm"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A90-ZA-L1o">
+                                <rect key="frame" x="358" y="792" width="40" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="XNG-Oq-K4C"/>
+                                </constraints>
+                                <state key="normal" image="info">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="large"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="pB6-5a-9nw"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="csF-q7-oat" firstAttribute="centerY" secondItem="h03-9u-nhf" secondAttribute="centerY" id="226-y0-erZ"/>
+                            <constraint firstItem="pB6-5a-9nw" firstAttribute="bottom" secondItem="A90-ZA-L1o" secondAttribute="bottom" constant="30" id="7t5-Qi-Q99"/>
+                            <constraint firstItem="TdY-8I-huR" firstAttribute="top" secondItem="pB6-5a-9nw" secondAttribute="top" constant="40" id="86m-dG-kHT"/>
+                            <constraint firstItem="pB6-5a-9nw" firstAttribute="trailing" secondItem="csF-q7-oat" secondAttribute="trailing" constant="16" id="8EG-ho-snG"/>
+                            <constraint firstItem="pB6-5a-9nw" firstAttribute="trailing" secondItem="TdY-8I-huR" secondAttribute="trailing" constant="16" id="DTT-TA-U4O"/>
+                            <constraint firstItem="pB6-5a-9nw" firstAttribute="trailing" secondItem="joB-Ne-8S2" secondAttribute="trailing" constant="130" id="MHI-X0-kcK"/>
+                            <constraint firstItem="A90-ZA-L1o" firstAttribute="width" secondItem="A90-ZA-L1o" secondAttribute="height" multiplier="1:1" id="Nyz-TP-liH"/>
+                            <constraint firstItem="c2Y-M7-sg7" firstAttribute="width" secondItem="c2Y-M7-sg7" secondAttribute="height" multiplier="1:1" id="PSO-FD-69v"/>
+                            <constraint firstItem="c2Y-M7-sg7" firstAttribute="top" secondItem="TdY-8I-huR" secondAttribute="top" id="Pez-XU-qH9"/>
+                            <constraint firstItem="joB-Ne-8S2" firstAttribute="top" secondItem="csF-q7-oat" secondAttribute="bottom" constant="30" id="Sy0-98-Esa"/>
+                            <constraint firstItem="csF-q7-oat" firstAttribute="centerX" secondItem="h03-9u-nhf" secondAttribute="centerX" id="TdF-qt-okR"/>
+                            <constraint firstItem="joB-Ne-8S2" firstAttribute="leading" secondItem="pB6-5a-9nw" secondAttribute="leading" constant="130" id="VVD-JH-k5u"/>
+                            <constraint firstItem="A90-ZA-L1o" firstAttribute="trailing" secondItem="TdY-8I-huR" secondAttribute="trailing" id="flg-YH-oGW"/>
+                            <constraint firstItem="TdY-8I-huR" firstAttribute="leading" secondItem="c2Y-M7-sg7" secondAttribute="trailing" constant="4" id="gZJ-jR-Hrz"/>
+                            <constraint firstItem="csF-q7-oat" firstAttribute="leading" secondItem="pB6-5a-9nw" secondAttribute="leading" constant="16" id="o8T-j3-tsF"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="MaG-AY-0U5"/>
+                    <connections>
+                        <outlet property="accountButton" destination="TdY-8I-huR" id="j1q-iZ-a6x"/>
+                        <outlet property="announButton" destination="c2Y-M7-sg7" id="mxl-jk-FK9"/>
+                        <outlet property="infoButton" destination="A90-ZA-L1o" id="cae-qA-trt"/>
+                        <outlet property="searchButton" destination="joB-Ne-8S2" id="3Cp-4v-Rh1"/>
+                        <outlet property="searchTextField" destination="zBe-ae-oQ0" id="FxB-WI-vhK"/>
+                        <outlet property="searchView" destination="csF-q7-oat" id="mAQ-cy-0Nc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SHM-SO-ZmE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="630.43478260869574" y="75.669642857142847"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="announcement" width="32" height="32"/>
+        <image name="info" width="42.5" height="42.5"/>
+        <image name="person" width="42.5" height="42.5"/>
+    </resources>
+</document>
