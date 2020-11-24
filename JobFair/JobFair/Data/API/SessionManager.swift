@@ -9,10 +9,9 @@ import Foundation
 import Alamofire
 import RxAlamofire
 
-let sessionManager: Session = {
-    let config = URLSessionConfiguration.af.default
+let sessionManager: SessionManager = {
+    let config = URLSessionConfiguration.default
     config.timeoutIntervalForRequest = 30
-    config.headers = .default
-    let sm = Session(configuration: config)
+    let sm = SessionManager(configuration: config)
     return sm
 }()
