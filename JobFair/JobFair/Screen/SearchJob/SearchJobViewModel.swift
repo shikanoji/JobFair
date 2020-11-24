@@ -15,12 +15,12 @@ struct SearchJobViewModel: ViewModelType {
     }
     
     struct Output {
-        let navigateAccount: Driver<Bool>
+        let navigateAccount: Driver<User?>
     }
     
     func transform(_ input: Input) -> Output {
         let acount = input.accountTrigger
-            .map { AppSetting.isLogin }
+            .map { AppSetting.user }
         
         return Output(
             navigateAccount: acount

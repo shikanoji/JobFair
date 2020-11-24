@@ -10,12 +10,19 @@ import RxSwift
 import RxCocoa
 
 class SearchJobViewController: BaseViewController {
+    
     @IBOutlet weak var accountButton: UIButton!
+    @IBOutlet weak var announButton: UIButton!
+    @IBOutlet weak var searchView: UIView!
+    @IBOutlet weak var searchTextField: UITextField!
+    @IBOutlet weak var searchButton: UIButton!
+    @IBOutlet weak var infoButton: UIButton!
     
     var viewModel = SearchJobViewModel()
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        configView()
     }
     
     override func bindViewModel() {
@@ -31,12 +38,22 @@ class SearchJobViewController: BaseViewController {
             .drive(navigateAccountBinder)
             .disposed(by: disposeBag)
     }
+    
+    func configView() {
+        searchView.backgroundColor = UIColor(rgb: 0xF4EEEE)
+        searchView.addBorder(cornerRadius: 10)
+        searchTextField.attributedPlaceholder =
+            NSAttributedString(string: "Nhập từ khoá công việc bạn quan tâm", attributes: [NSAttributedString.Key.foregroundColor: UIColor.gray])
+        searchButton.backgroundColor = UIColor(rgb: 0xF3CA3E)
+        searchButton.setTitleColor(.white, for: .normal)
+        searchButton.addBorder(cornerRadius: 10)
+    }
 }
 
 extension SearchJobViewController {
-    var navigateAccountBinder: Binder<Bool> {
-        return Binder(self) { vc, goAcount in
-            if goAcount {
+    var navigateAccountBinder: Binder<User?> {
+        return Binder(self) { vc, user in
+            if user != nil {
                 let accountVC = Storyboard.Account.instantiate(AccountViewController.self)
                 vc.navigationController?.pushViewController(accountVC, animated: true)
             } else {

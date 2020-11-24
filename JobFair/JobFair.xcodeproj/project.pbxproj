@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A513BC45256B66C3009FFAF7 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A513BC44256B66C3009FFAF7 /* GoogleService-Info.plist */; };
+		A541DD58256CBAFC00A85AAC /* UIColor+.swift in Sources */ = {isa = PBXBuildFile; fileRef = A541DD57256CBAFC00A85AAC /* UIColor+.swift */; };
+		A541DD79256D0B9600A85AAC /* UIView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = A541DD78256D0B9600A85AAC /* UIView+.swift */; };
 		A580D7BB25677235001D1B01 /* Storyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = A580D7BA25677235001D1B01 /* Storyboard.swift */; };
 		A580D7C12567727B001D1B01 /* UIViewController+.swift in Sources */ = {isa = PBXBuildFile; fileRef = A580D7C02567727B001D1B01 /* UIViewController+.swift */; };
 		A580D7CB256772F2001D1B01 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A580D7CA256772F2001D1B01 /* Login.storyboard */; };
@@ -59,6 +62,9 @@
 		4E7BD7805707471C5A690894 /* Pods-JobFair.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JobFair.debug.xcconfig"; path = "Target Support Files/Pods-JobFair/Pods-JobFair.debug.xcconfig"; sourceTree = "<group>"; };
 		55FF2930F5C8D7429E68F7DD /* Pods_JobFair.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JobFair.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		90AAF48907FA591399EF72C3 /* Pods-JobFairTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JobFairTests.debug.xcconfig"; path = "Target Support Files/Pods-JobFairTests/Pods-JobFairTests.debug.xcconfig"; sourceTree = "<group>"; };
+		A513BC44256B66C3009FFAF7 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		A541DD57256CBAFC00A85AAC /* UIColor+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+.swift"; sourceTree = "<group>"; };
+		A541DD78256D0B9600A85AAC /* UIView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+.swift"; sourceTree = "<group>"; };
 		A580D7BA25677235001D1B01 /* Storyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storyboard.swift; sourceTree = "<group>"; };
 		A580D7C02567727B001D1B01 /* UIViewController+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+.swift"; sourceTree = "<group>"; };
 		A580D7CA256772F2001D1B01 /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
@@ -147,6 +153,8 @@
 			children = (
 				A580D7C02567727B001D1B01 /* UIViewController+.swift */,
 				A580D8B32567AAA1001D1B01 /* Observable+Ext.swift */,
+				A541DD57256CBAFC00A85AAC /* UIColor+.swift */,
+				A541DD78256D0B9600A85AAC /* UIView+.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -154,6 +162,7 @@
 		A580D7C5256772B6001D1B01 /* App */ = {
 			isa = PBXGroup;
 			children = (
+				A513BC44256B66C3009FFAF7 /* GoogleService-Info.plist */,
 				D754CCE025668D8E006460B4 /* Info.plist */,
 				D754CCD825668D8D006460B4 /* JobFair.xcdatamodeld */,
 				D754CCCF25668D8D006460B4 /* AppDelegate.swift */,
@@ -332,6 +341,7 @@
 				D754CCC925668D8D006460B4 /* Frameworks */,
 				D754CCCA25668D8D006460B4 /* Resources */,
 				C94EE94A1DCEA6284519CC92 /* [CP] Embed Pods Frameworks */,
+				BA0CA4F186B3E5B0DBF7A7EC /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -370,6 +380,7 @@
 				D754CCED25668D8F006460B4 /* Frameworks */,
 				D754CCEE25668D8F006460B4 /* Resources */,
 				B220FE4F4A00B09564774AA8 /* [CP] Embed Pods Frameworks */,
+				15052BBF36BC470527831840 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -434,6 +445,7 @@
 				A580D8912567A5E5001D1B01 /* SearchJob.storyboard in Resources */,
 				A580D8BA2567ABA2001D1B01 /* Account.storyboard in Resources */,
 				D754CCD725668D8D006460B4 /* Main.storyboard in Resources */,
+				A513BC45256B66C3009FFAF7 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -454,6 +466,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		15052BBF36BC470527831840 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-JobFair-JobFairUITests/Pods-JobFair-JobFairUITests-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-JobFair-JobFairUITests/Pods-JobFair-JobFairUITests-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-JobFair-JobFairUITests/Pods-JobFair-JobFairUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		5D56FCB889C96FD36BA34B57 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -491,6 +520,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-JobFair-JobFairUITests/Pods-JobFair-JobFairUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BA0CA4F186B3E5B0DBF7A7EC /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-JobFair/Pods-JobFair-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-JobFair/Pods-JobFair-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-JobFair/Pods-JobFair-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		C7685F28CECD96A72F2923FB /* [CP] Check Pods Manifest.lock */ = {
@@ -567,8 +613,10 @@
 				D754CCDA25668D8D006460B4 /* JobFair.xcdatamodeld in Sources */,
 				A580D84725679B6E001D1B01 /* Router.swift in Sources */,
 				A580D8B42567AAA1001D1B01 /* Observable+Ext.swift in Sources */,
+				A541DD79256D0B9600A85AAC /* UIView+.swift in Sources */,
 				A580D7D025677304001D1B01 /* LoginViewController.swift in Sources */,
 				A580D89C2567A63D001D1B01 /* BaseViewController.swift in Sources */,
+				A541DD58256CBAFC00A85AAC /* UIColor+.swift in Sources */,
 				A580D8AF2567A976001D1B01 /* ViewModelType.swift in Sources */,
 				A580D8522567A330001D1B01 /* AppSetting.swift in Sources */,
 				D754CCD025668D8D006460B4 /* AppDelegate.swift in Sources */,

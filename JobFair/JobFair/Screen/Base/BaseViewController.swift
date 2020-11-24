@@ -24,6 +24,21 @@ class BaseViewController: UIViewController {
         
         self.view.addGestureRecognizer(swipeLeft)
         self.view.addGestureRecognizer(swipeRight)
+        setupBackground()
+    }
+    
+    func setupBackground() {
+        let gradient = CAGradientLayer()
+        let color1 = UIColor(rgb: 0x45425A).cgColor
+        let color2 = UIColor(rgb: 0x5B5586).cgColor
+        let color3 = UIColor(rgb: 0x454255).cgColor
+
+        gradient.colors = [color1, color2, color3]
+
+        gradient.locations = [0.0, 0.48, 1.0]
+        
+        gradient.frame = view.bounds
+        view.layer.insertSublayer(gradient, at: 0)
     }
     
     func bindViewModel() {

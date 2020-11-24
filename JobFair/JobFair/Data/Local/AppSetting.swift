@@ -7,19 +7,7 @@
 
 import Foundation
 
-enum AppSetting {
-    static var isLogin: Bool {
-        get {
-            let defaults = UserDefaults.standard
-            return defaults.bool(forKey: #function)
-        }
-        set {
-            let defaults = UserDefaults.standard
-            defaults.set(newValue, forKey: #function)
-            defaults.synchronize()
-        }
-    }
-    
+enum AppSetting {    
     static var user: User? {
         get {
             if let data = UserDefaults.standard.value(forKey: #function) as? [String: Any] {
