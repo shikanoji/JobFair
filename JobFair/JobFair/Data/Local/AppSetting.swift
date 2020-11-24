@@ -7,7 +7,7 @@
 
 import Foundation
 
-enum AppSetting {
+enum AppSetting {    
     static var user: User? {
         get {
             if let data = UserDefaults.standard.value(forKey: #function) as? [String: Any] {

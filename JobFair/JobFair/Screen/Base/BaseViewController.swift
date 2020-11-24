@@ -24,7 +24,6 @@ class BaseViewController: UIViewController {
         
         self.view.addGestureRecognizer(swipeLeft)
         self.view.addGestureRecognizer(swipeRight)
-
         setupBackground()
     }
     
