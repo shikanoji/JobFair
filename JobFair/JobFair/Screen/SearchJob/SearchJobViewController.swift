@@ -30,6 +30,9 @@ class SearchJobViewController: BaseViewController {
         
         let input = SearchJobViewModel.Input(accountTrigger: accountButton.rx.tap
                                                 .debounce(.milliseconds(200), scheduler: MainScheduler.instance)
+                                                .asDriverOnErrorJustComplete(),
+                                             searchTrigger: searchButton.rx.tap
+                                                .debounce(.milliseconds(200), scheduler: MainScheduler.instance)
                                                 .asDriverOnErrorJustComplete())
         
         let output = viewModel.transform(input)

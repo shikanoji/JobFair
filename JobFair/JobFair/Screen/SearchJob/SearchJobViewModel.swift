@@ -12,6 +12,7 @@ import RxCocoa
 struct SearchJobViewModel: ViewModelType {
     struct Input {
         let accountTrigger: Driver<Void>
+        let searchTrigger: Driver<Void>
     }
     
     struct Output {
