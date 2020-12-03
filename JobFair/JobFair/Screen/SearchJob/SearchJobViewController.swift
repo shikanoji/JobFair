@@ -40,6 +40,16 @@ class SearchJobViewController: BaseViewController {
         output.navigateAccount
             .drive(navigateAccountBinder)
             .disposed(by: disposeBag)
+        
+        output.searchJobs
+            .drive()
+            .disposed(by: disposeBag)
+        
+        output.fetchJobs
+            .drive(onNext: { jobs in
+                print("xxxx \(jobs)")
+            })
+            .disposed(by: disposeBag)
     }
     
     func configView() {
@@ -51,6 +61,8 @@ class SearchJobViewController: BaseViewController {
         searchButton.setTitleColor(.white, for: .normal)
         searchButton.addBorder(cornerRadius: 10)
     }
+    
+    
 }
 
 extension SearchJobViewController {
